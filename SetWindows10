@@ -1,0 +1,168 @@
+Punto de restauración:
+1.(Windows+s)
+2.Escribe "crear punto de restauración"
+3.Seleccionalo
+4.Selecciona "Disco local (c:)"
+5.Selecciona "Configurar"
+6.Elige "Activar protección del sistema"
+7.Escpge entre 10 y 25 Gb ó lo que te solicite como mínimo
+8.Eligen un nombre y fin.
+//Si quieres restaurar repite los pasos (1 y 2) elige "Restaurar sistema" y selecciona el que creaste//
++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------+
+Procesos:
+1.Ir a buscar (windows+s)
+2.Abrir Servicios
+3.Buscar Telefonía
+4.Doble click
+5.Deshabilitar
+6.Admin mapas descargado
+7.Deshabilitar
+8.Captura snmp
+9.Desabilitar
+10.Buscar Deteccion de hardware shell  
+11.DEsabilitar
+12.Propiedades Fax
+13.Desabilitar
+14.Buscar Servicio telefonico
+15.Desabilitar
+16.Buscar Servicio de transferencia inteligente en segundo plano
+17.Desabilitar
+18.Servicio biometrico de windows
+19.Desabilitar
+20.Buscar SysMain
+21.Desabilitar
+22.Buscar Servicios Panel de escritura a mano
+23.Desabilitar
+24.Buscar Net Logon
+25.Servicios de Xbox
+26.Desabilitar
+27.Windows Search
+28.Desabilitar
+29.Windows Update
+30.Desabilitar 
+31.Windows mixed reality opener
+32.Desabilitar 
++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------+
+Blotware:
+°Archivo (.bat) para quitar blotware de Windowa--https://gist.githubusercontent.com/matthewjberger/2f4295887d6cb5738fa34e597f457b7f/raw/b23fa065febed8a2d7c2f030fba6da381f640997/Remove-Windows10-Bloat.bat
+	1.Da Click derecho en el texto y "descargar como"
+	2.Abre el archivo y elige que funciones se eliminaran, si quieres conservar una sólo elimina su fila
+	3.Da click en "archivo" y "guardar como"
+	4.Elige un nombre que te gustaría y al final le agreguas ".bat" (lo convertirá en un ejecutable del CMD)
+	5.Que finalice.
+
++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------+
+Mantenimiento:
+1.(windows+r)
+2.Escribir "temp"
+3.Eliminar (archivos basura sistema)
+4.(windows+r)
+5.Escribir "%temp%
+6.elminar todo (archivos basura tuyos)
+7.(windows+r)
+8.Escribir "prefetch"
+9.Eliminar todo (Archivos basura)
+10.(windows+s)
+11.Escribir "Visor de eventos"
+12.Seleccionar "Registro de eventos windows"
+13.Hacer click derecho y después vaciar registros en (Aplicación, Seguridad, Instalación, Sistema y eventos reenviados)
+14.Irse a "mi equipo" y selecciona la unidad de memoria
+15.Click derecho y dale en propiedades
+16.Seleccionar Liberar espacio (pesataña genereal)
+17.Seleccionar "Limpiar archivos del sistema" 
+18.Elegir Opciones y aceptar.
+19.Seleccionar Pestaña "Herramientas"
+20.Seleccionar "Optimizar"
+21.Elige la unidad deseada
+22.Selecciona "Optimizar" y finalmente en "Configuración" para elegir cada cuando se hará el proceso
+23.Irse a "mi equipo" y darle click derecho
+24.Selecciona "propiedades"
+25.Selecciona "Configuración avanzada del equipo"
+26.En la primera pestaña selecciona "Rendimiento"
+27.Selecciona la pestaña "Efectos visuales"
+28.Selecciona la opción "Ajustar para obtener el mejor rendimiento"
+29.(windows+r)
+30.Escribir "msconfig" y dar enter
+31.En la pestaña general seleccionar "Inicio selectivo"
+32.Dejar los primeros dos seleccionados
+33.Ir a pestaña "Arranque"
+34.Tiempo de espera entre 13-18 segundos (Dependiendo de su pc)
+35.Selecciona "Opciones Avanzadas"
+36.Selecciona "numero de procesadores", pon todos los que aparezcan y pon aceptar
+37.Ir a pestaña "Servicios" 
+38.Seleccionar "Ocultar todos los servicios de Microsoft"
+39.Deseleccionar los no deseados
+40.Seleccionar "Aplicar"
+41.Irse al administrador de tareas en la misma pestaño ó (ctrl+alt+supr)
+42.Desabilita todos los programas en el arranque que no quieras que se inicien al prender tu pc.
++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------+
+Internet y Rápidez:
+1.(Windows+r)
+2.Escribe "regedit" y ejecutar como administrador
+3.En la parte de arriba pega lo siguiente "Equipo\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces"
+4.En sus carpetas adjuntas busca un archivo donde esté tu dirección ip
+	4.1.Para saber tu ip presiona (Windowa+r)
+	4.2.Teclea cmd e ingresa	
+	4.3.Teclea "ipconfig"
+	4.4.Tu ip será la que esté en "Adaptador de LAN inalámbrica Conexión de área local* 10:" comienza con 192...
+5.Da click derecho en un espacio en blanco y pon "nuevo"
+6.Elige "Valor de DWORD (32 bits)
+7.Nómbralo como "Tcpackfrequency"
+8.Dale doble click y cambia su valor a "1" que es para activarlo
+9.Da click derecho en un espacio en blanco y pon "nuevo"
+10.Nómbralo como "Tcpnodelay"
+11.Dale doble click y cambia su valor a "1" que es para activarlo
+12.Da click derecho en un espacio en blanco y pon "nuevo"
+13.Nómbralo como "TcpDelAckTicks"
+14.Dale doble click y cambia su valor a "0"
+15.Cambia la dirección anterior por "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia" 
+16.Ingresa a la carpeta "System Profile"
+17.Selecciona y abre el archivo "NetworkThrottlingIndex"
+18.Cambia la información del valor por "fffffff" (7 f´s)
+19.Acepta
+20.Selecciona y abre el archivo "SystemResponsiveness"
+21.Cambia la información del valor por "0"
+22.Acepta
+23.Cambia la dirección anterior por "Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile\Tasks\Games"
+24.Selecciona y abre el archivo "GpuPriority"
+25.Cambia la información de valor por "8"
+26.Acepta
+27.Selecciona y abre el archivo "Priority"
+28.Cambia la información de valor por "6"
++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------++-------+
+++FPS y latencia (2-10)
+1.Presiona (Windows+s)
+2.Digita "cmd" y ejecuta como administrador
+3.Copia, pega y ejecuta "bcdedit /set useplatformclock false"
+4.Si no percibes una mejoría de fps digita "bcdedit /set useplatformclock true"
++-------++-------++-------++-------++-------++-------++-------++-------++-------+
+Apariencia:
+°Barra de tareas transparente--https://github.com/TranslucentTB/TranslucentTB
+	1.Realizar la instalación habitual y espera a que finalice
+	2.ir a Este equipo/"tu disco duro"(c;)/ProgramData/Microsoft/Windows/MenúInicio
+	3.Buscar el acceso directo "TranslucentTB"
+	4.Seleccionalo y pon (ctrl+x)
+	5.Ahí mismo busca y entra a la carpeta "Inicio"
+	6.Pon (ctrl+v)
+	7.Listo
+°Íconos--https://www.flaticon.es/categorias/computadora
+       --https://icon-icons.com/es/buscar/iconos/escritorio
+	1.Descargar tus íconos con terminación (.ico)
+	2.Seleccionar con click derecho el archivo o carpeta deseada
+	3.Seleccionar "Propiedades"	
+	4.Ir a pestaña "Personalizar"
+	5.Seleccionar "Cambiar icono"
+	6.Da click en "examinar"
+	7.Buscar tus archivos con terminación (.ico)
+	8.Aceptar y listo
+°Esconder papelera
+	1.Presiona el "ícono de windows" 
+	2.Presiona el "ícono de configuación"
+	3.Selecciona "personalización"
+	4.Selecciona "temas"
+	5.Selcciona "configuración de íconos de escritorio"
+	6.Deselecciona la casilla de "papelera de reciclaje"
+	7.Presiona "aplicar y aceptar.
+-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+Disfruta tu Windows :)
